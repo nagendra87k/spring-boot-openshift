@@ -22,6 +22,12 @@ items:
       jenkinsPipelineStrategy: {}
       type: JenkinsPipeline
     triggers:
+    hard:
+        configmaps: "10"
+        persistentvolumeclaims: "4"
+        replicationcontrollers: "20"
+        secrets: "10" 4
+        services: "10"
   status:
     lastVersion: 0
 kind: List
